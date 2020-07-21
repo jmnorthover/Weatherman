@@ -9,7 +9,7 @@ const Forecast = ({ data }) => {
       <div>{format(new Date(data.dt * 1000), 'p')}</div>
       <div>
         <img
-          src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
           alt={data.weather[0].description}
         />
       </div>
