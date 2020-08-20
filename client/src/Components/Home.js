@@ -16,8 +16,8 @@ const Home = ({ setZipCode }) => {
   return (
     <div className="splash">
       <div className="splash-content">
-        <h1>WEATHERMAN</h1>
-        <h2>Enter your zipcode:</h2>
+        <h1 class="logo">WEATHERMAN</h1>
+        <h2 class="zip_prompt">Enter your zipcode:</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

@@ -24,8 +24,10 @@ const WeatherDisplay = ({ zipCode, setZipCode }) => {
         <div className="change" onClick={() => setZipCode('')}>
           Change Location
         </div>
-        <h1>{currentWeather.name}</h1>
-        <h2>{currentWeather.weather[0].description}</h2>
+        <div className="location">{currentWeather.name}</div>
+        <h2 className="weather-desc">
+          {currentWeather.weather[0].description}
+        </h2>
         <div className="temp">{Math.round(currentWeather.main.temp)}&deg;</div>
         <div className="sub-info">
           <div>
